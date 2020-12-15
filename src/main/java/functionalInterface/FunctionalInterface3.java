@@ -1,20 +1,20 @@
-package me.whiteship.java8to11;
+package functionalInterface;
 
 import java.util.function.*;
 
-public class Section_1_2_1 implements Function<Integer, Integer> {
+public class FunctionalInterface3 implements Function<Integer, Integer> {
     @Override
     public Integer apply(Integer integer) {
         return integer + 10;
     }
     // 자바에서 제공하는 함수형 인터페이스(추상메소드가 하나인 인터페이스)
     public static void main(String[] args) {
-        Section_1_2_1 section_1_2_1 = new Section_1_2_1();
-        System.out.println(section_1_2_1.apply(10));
+        FunctionalInterface3 functionalInterface3 = new FunctionalInterface3();
+        System.out.println(functionalInterface3.apply(10));
 
 
         Function<Integer, Integer> plus10 = (i) -> i + 10;
-        UnaryOperator<Integer> plus10_2 = (i) -> i + 10; // 입력값과 출력값이 동일한 경우
+        UnaryOperator<Integer> plus10_2 = (i) -> i + 10; // 입력값과 출력값의 타입이 동일한 경우
         System.out.println(plus10.apply(10));
 
         Function<Integer,Integer> multiply2 = (Integer) -> Integer * 2;
