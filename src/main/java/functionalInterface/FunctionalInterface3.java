@@ -42,10 +42,5 @@ public class FunctionalInterface3 implements Function<Integer, Integer> {
         System.out.println(isBiggerThanFive.and(isLowerThanSix).test(10));
         System.out.println(isBiggerThanFive.or(isLowerThanSix).test(10));
 
-
-
-
-
-
     }
 }
