@@ -26,18 +26,18 @@ public class MethodReference {
         Greeting greeting_3 = newGreeting_2.apply("김동우");
 
 
-        String[] names_1 = {"김동우", "김상석", "김정우"};
+        String[] names_1 = {"김상석", "김동우", "김정우"};
         Arrays.sort(names_1, new Comparator<String>() {
             @Override
             public int compare(String s, String t1) {
-                return 0;
+                return 1;
             }
         });
         System.out.println("name_1 = " + Arrays.toString(names_1));
-        String[] names_2 = {"김동우", "김상석", "김정우"};
-        Arrays.sort(names_2, (o1,o2) -> 0);
+        String[] names_2 = {"김상석", "김동우", "김정우"};
+        Arrays.sort(names_2, (o1,o2) -> 1);
         System.out.println("name_2 = " + Arrays.toString(names_2));
-        String[] names_3 = {"김동우", "김상석", "김정우"};
+        String[] names_3 = {"김상석", "김동우", "김정우"};
         Arrays.sort(names_3, String::compareToIgnoreCase);
         System.out.println("name_3 = " + Arrays.toString(names_3));
 
